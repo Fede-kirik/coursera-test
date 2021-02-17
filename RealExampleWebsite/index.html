@@ -12,36 +12,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- font style Lora from google/fonts per il titolo-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 
   </head>
 <body>
-<header>
-  <!-- navigation bar -->
-  <nav id="header-nav" class="navbar navbar-default"> 
-    <div class="container"> 
-      <!-- stiamo vincolando il nostro container ad una dimensione ben  definita-->
-      <div class="navbar-header">
-        <a href="index.html" class="pull-left visible-md visible-lg"><!--logo del rist cliccabile -->
-          <div id="logo-img" alt="Logo image" ></div>
-        </a>
-      <div class="navbar-brand">
-        <a href="index.html"> <!--nome del ristorante cliccabile -->
-          <h1>David Chu's China Bistro</h1>
-        </a>
-        <p>
-          <img src="images/star-k-logo.png">
-          <span>Kosher Certified</span>
-        </p>
-      </div>
+  <header>
+    <!-- navigation bar -->
+    <nav id="header-nav" class="navbar navbar-default"> 
+      <div class="container"> 
+        <!-- stiamo vincolando il nostro container ad una dimensione ben  definita-->
+        <div class="navbar-header">
 
+          <a href="index.html" class="pull-left visible-md visible-lg"><!--logo del rist cliccabile -->
+            <div id="logo-img" alt="Logo image" ></div>
+          </a>
+          <div class="navbar-brand">
+            <a href="index.html"> <!--nome del ristorante cliccabile -->
+              <h1>David Chu's China Bistro</h1>
+            </a>
+            <p>
+              <img src="images/star-k-logo.png">
+              <span>Kosher Certified</span>
+            </p>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
+        </div><!-- navbar header-->
 
-      </div>
-    </div>
-  </nav>
-</header>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-catergories.html">
+                <span class="glyphicon glyphicon-cutlery"></span>
+                <br class="hidden-xs"> Menu
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <br class="hidden-xs"> About
+              </a>
+            </li>          
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span>
+                <br class="hidden-xs"> Awards
+              </a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:123-456-7890">
+                <span>123-456-7890</span>
+              </a>
+              <div>* We Deliver</div>
+            </li>          
+          </ul>
+
+        </div><!-- collapsable-nav -->
+
+      </div><!-- container -->
+    </nav>
+  </header>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
