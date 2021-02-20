@@ -13,10 +13,10 @@
     <!-- font style Lora from google/fonts per il titolo-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-
   </head>
 <body>
+
+<!--INIZIO HEADER -->
   <header>
     <!-- navigation bar -->
     <nav id="header-nav" class="navbar navbar-default"> 
@@ -73,12 +73,86 @@
               <div>* We Deliver</div>
             </li>          
           </ul>
-
-        </div><!-- collapsable-nav -->
-
-      </div><!-- container -->
+        </div><!--fine collapsable-nav -->
+      </div><!--fine container -->
     </nav>
-  </header>
+  </header><!--FINE HEADER -->
+
+<!-- bottone con numero telefono -->
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    123-456-7890
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+
+<!--INIZIO HOME PAGE -->
+  <!--MAIN CONTENT - JUMBOTRON -->
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="picture of the Restaurant" class="img-responsive visible-xs">
+    </div>
+    <!-- home tiles -->
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+         <a href="menu-categories.html">
+          <div id="menu-tile"> 
+            <span>menu</span>
+          </div>
+         </a>
+      
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a  href="single-categories.html">
+          <div id="specials-tile"> 
+            <span>specials</span>
+          </div>
+        </a>
+      
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://goo.gl/maps/teu2LJJRfSEm2KAr5" target="_blank">
+          <div id="map-tile">
+            <!-- Qui andrà l'iframe della mappa --> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.6750632361554!2d-76.7138821488162!3d39.36359442683292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sit!2sit!4v1613825982994!5m2!1sit!2sit" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <span>map</span>
+          </div>
+        </a>
+
+      </div>
+    </div><!-- fine home-tile -->
+  </div><!--fine main container -->
+<!--FINE HOME PAGE -->
+
+<!-- footer -->
+<footer class="panel-footer">
+  <div class="container">
+    <div class="row" >
+          <section id="hours" class="col-sm-4">
+            <span>Hours</span><br>
+            Sun-Thurs: 11:15am - 10:00pm<br>
+            <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address</span><br>
+            7105 Reisterstown Road <br>
+            Baltimore, MD 21215<br>
+            <p>*Delivery area within 3-4 miles</p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>"The best Chinese restaurant in the city!"</p>
+            <p>"Amazing food! Great service!"</p>
+          </section>
+    </div><!--fine row -->
+    <div class="text-center"> &copy; Copyright</div>
+  </div><!--fine container -->
+</footer>
+<!-- fine footer -->
+
+
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
