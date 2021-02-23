@@ -1,0 +1,128 @@
+/*setup global style*/
+
+body{
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+	/*non ho questo font quindi lo devo importare da Google/fonts*/
+	font-family: 'Oxygen', sans-serif;
+}
+
+/*creiamo la navbar*/
+#header-nav{
+	background-color: #94b765;
+	border-radius: 0;
+	border: 0;
+}
+
+#header-nav .container{
+	width: 100%;
+}
+
+.navbar-brand{
+	height: 100px;
+	margin: auto 0 auto;
+}
+
+/*definiamo lo stile del titolo*/
+.navbar-brand h1{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-shadow: 3px 3px 1px #222;
+	line-height: 100%;
+
+}
+
+/*togliamo la sottolineatura dal link*/
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+/*stili per la nav-list ovvero la lista */
+#nav-list{
+	margin-top: 0;
+	background-color: #94b76573;
+}
+
+#nav-list a{
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}
+#nav-list a:hover{
+background-color: #E7E7E7;
+opacity: .5;
+
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #000;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -50px; /*posizione bottome dropdown menu*/
+}
+/* END HEADER */
+
+/*HOME PAGE*/
+#title-page {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	font-size: 175%;
+	color: black;
+}
+
+#tile-chicken{
+	background-color: #E7E7E7;
+	margin-bottom: 25px;
+}
+
+#tile-chicken h2{
+	margin-top: 10px;
+	font-size: 150%;
+}
+
+#description{
+	padding: 25px;
+}
+
+/* MEDIA QUERIES */
+/********** EXTRA SMALL DEVICES ONLY **/
+@media(max-width: 767px){
+
+	/* header*/
+#collapsable-nav{
+	background-color: #fff
+}
+
+.navbar-brand{
+	height: 80px;
+	margin: auto 0 auto;
+}
+
+.navbar-brand h1{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 3px 3px 1px #222;
+	line-height: 100%;
+}
+
+
+	/* end header */		
+	/*home page*/
+#tile-chicken{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+}
+
